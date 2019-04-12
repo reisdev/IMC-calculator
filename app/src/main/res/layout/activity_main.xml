@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.matheus.imccalculator.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/nameLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/nameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/nameInput"
+            android:layout_below="@id/nameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="15" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/imcLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/nameLine"
+        android:layout_below="@+id/nameLine"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/ageText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/age" />
+
+        <EditText
+            android:id="@+id/ageInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/ageText"
+            android:layout_below="@id/ageText"
+            android:ems="3" />
+
+        <TextView
+            android:id="@+id/weightText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/ageText"
+            android:layout_marginLeft="70dp"
+            android:text="@string/weight" />
+
+        <EditText
+            android:id="@+id/weightInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/weightText"
+            android:layout_alignStart="@id/weightText"
+            android:ems="5" />
+
+        <TextView
+            android:id="@+id/heightText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/heightInput"
+            android:text="@string/height" />
+
+        <EditText
+            android:id="@+id/heightInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/heightText"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="30dp"
+            android:ems="4" />
+    </RelativeLayout>
+    <Button
+        android:id="@+id/submitReport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imcLine"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:text="@string/report"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="#FFFFFF"
+        android:textAllCaps="false"/>
+</RelativeLayout>

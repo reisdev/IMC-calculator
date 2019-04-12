@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">IMC Calculator</string>
+    <string name="name">Name</string>
+    <string name="age">Age</string>
+    <string name="weight">Weight(Kg)</string>
+    <string name="height">Height(m)</string>
+    <string name="report">Nutritional Report</string>
+</resources>

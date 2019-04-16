@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="@string/report"
+        android:textSize="30dp"
+        android:textStyle="italic" />
+
+    <RelativeLayout
+        android:id="@+id/resultLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp">
+
+        <TextView
+            android:id="@+id/nameTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/nameTitle"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/nameResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/nameTitle"
+            android:layout_alignStart="@id/classResult"
+            android:layout_toRightOf="@id/nameTitle"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/ageTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nameTitle"
+            android:layout_alignStart="@id/nameTitle"
+            android:layout_marginTop="20dp"
+            android:text="@string/ageTitle"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/ageResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/ageTitle"
+            android:layout_alignStart="@id/classResult"
+            android:layout_toRightOf="@id/ageTitle"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/weightTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ageTitle"
+            android:layout_alignStart="@id/ageTitle"
+            android:layout_marginTop="20dp"
+            android:text="@string/weightTitle"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/weightResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/weightTitle"
+            android:layout_alignStart="@id/classResult"
+            android:layout_toRightOf="@id/weightTitle"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/heightTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/weightTitle"
+            android:layout_alignStart="@id/weightTitle"
+            android:layout_marginTop="20dp"
+            android:text="@string/heightTitle"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/heightResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/heightTitle"
+            android:layout_toRightOf="@id/heightTitle"
+            android:layout_alignStart="@id/classResult"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/IMCTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/heightTitle"
+            android:layout_alignStart="@id/heightTitle"
+            android:layout_marginTop="20dp"
+            android:text="@string/IMC"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/IMCResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/IMCTitle"
+            android:layout_alignStart="@id/classResult"
+            android:layout_toRightOf="@id/IMCTitle"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/classTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/IMCTitle"
+            android:layout_alignStart="@id/IMCTitle"
+            android:layout_marginTop="20dp"
+            android:text="@string/classTitle"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/classResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/classTitle"
+            android:layout_toRightOf="@id/classTitle"
+            android:layout_marginLeft="20dp"
+            android:textSize="20sp" />
+    </RelativeLayout>
+    <Button
+        android:id="@+id/newCalculation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:text="@string/calculation"
+        android:layout_below="@id/resultLine"/>
+</RelativeLayout>

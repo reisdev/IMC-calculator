@@ -5,4 +5,18 @@
     <string name="weight">Weight(Kg)</string>
     <string name="height">Height(m)</string>
     <string name="report">Nutritional Report</string>
+    <string name="nameTitle">Name:</string>
+    <string name="ageTitle">Age:</string>
+    <string name="weightTitle">Weight:</string>
+    <string name="heightTitle">Height:</string>
+    <string name="IMC">IMC:</string>
+    <string name="classTitle">Classification:</string>
+    <string name="years">years</string>
+    <string name="underweight">Underweight</string>
+    <string name="healthy">Normal Weight</string>
+    <string name="overweight">Overweight</string>
+    <string name="obesity1">Class I Obesity</string>
+    <string name="obesity2">Class II Obesity</string>
+    <string name="obesity3">Class III Obesity</string>
+    <string name="calculation">Do new Calculation</string>
 </resources>

@@ -4,7 +4,6 @@ import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_result.*
-import java.text.DecimalFormat
 
 class ResultActivity : AppCompatActivity() {
 
@@ -17,7 +16,7 @@ class ResultActivity : AppCompatActivity() {
         var person = param.getSerializable("person") as Person
 
         nameResult.text = person.getName()
-        ageResult.text = "%d years".format(person.getAge())
+        ageResult.text = "%d %s".format(person.getAge(),resources.getString(R.string.years))
         weightResult.text = "%.1f Kg".format(person.getWeight())
         heightResult.text = "%.2f m".format(person.getHeight())
         IMCResult.text = "%.1f Kg/m²".format(person.getIMC())
